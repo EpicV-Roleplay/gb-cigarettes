@@ -33,7 +33,7 @@ end)
 RegisterNetEvent('cigarettes:client:UseCigarette')
 AddEventHandler('cigarettes:client:UseCigarette', function()
     QBCore.Functions.Progressbar("smoke_joint", "Lighting cigarette...", 1000, false, true, {
-        disableMovement = false,
+        disableMovement = true,
         disableCarMovement = false,
 		disableMouse = false,
 		disableCombat = true,
