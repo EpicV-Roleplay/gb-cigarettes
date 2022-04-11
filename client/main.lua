@@ -7,7 +7,7 @@ local cigpackData = {}
 RegisterNetEvent('cigarettes:client:UseCigPack', function(ItemData) -- On Item Use (registered server side)
     LocalPlayer.state:set("inv_busy", true, true)
     QBCore.Functions.Progressbar("pickup_sla", "Opening Cigarette Pack...", 5000, false, true, {
-        disableMovement = true,
+        disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
         disableCombat = true,
@@ -33,7 +33,7 @@ end)
 RegisterNetEvent('cigarettes:client:UseCigarette')
 AddEventHandler('cigarettes:client:UseCigarette', function()
     QBCore.Functions.Progressbar("smoke_joint", "Lighting cigarette...", 1000, false, true, {
-        disableMovement = true,
+        disableMovement = false,
         disableCarMovement = false,
 		disableMouse = false,
 		disableCombat = true,
